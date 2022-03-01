@@ -436,15 +436,39 @@ class SchedulerURLHandler:
 
 
 class Scheduler:
-    """Scheduler class."""
+    """
+    Scheduler class.
+
+    Args:
+        reservation_time (int): Indicates, how long a date slot
+            will be reserved after a participant has first registered.
+            If the participant does not confirm their registration
+            in this time, the reservation expires. The time is defined
+            in seconds. Defaults to ``60 * 60``, i.e., one hour.
+        cancellation_time (int): Indicates, how far in advance a
+            confirmed date slot registration can be cancelled.
+            If the *cancellation_time* is one hour, participants can
+            cancel their reservation up to one hour before the slot
+            starts. The time is defined in seconds.
+            Defaults to ``60 * 60 * 3``, i.e., three hours.
+        lang (str): Display language of the participant-facing
+            registration interface. Defaults to 'de' (German).
+        csv_delimiter (str): Delimiter to use for parsing date slot
+            creation data in the admin view.
+        name (str): Name of the scheduler. Defaults for 'scheduler',
+            which should generally be fine. Only needs consideration,
+            if you plan on using multiple schedulers in the same
+            experiment.
+
+    """
 
     def __init__(
         self,
-        name: str,
-        lang: str,
         reservation_time: int = 60 * 60,
         cancellation_time: int = 60 * 60 * 3,
         csv_delimiter: str = ",",
+        lang: str = "de",
+        name: str = "scheduler",
     ):
         self.name = name
         self.txt = TEXTS[lang]
@@ -453,41 +477,56 @@ class Scheduler:
         self.delimiter = csv_delimiter
 
     def url_handler(self, exp) -> SchedulerURLHandler:
+        """Returns a URL handler."""
         return SchedulerURLHandler(self, exp=exp)
 
     @property
     def registration(self) -> str:
+        """Name of the scheduler's registration page."""
         return self.name + "_registration__"
 
     @property
     def registration_initiated(self) -> str:
+        """Name of the scheduler's registration initiated page."""
         return self.name + "_registration_initiated__"
 
     @property
     def registration_confirmed(self) -> str:
+        """Name of the scheduler's registration confirmed page."""
         return self.name + "_registration_confirmed__"
 
     @property
     def registration_cancelled(self) -> str:
+        """Name of the scheduler's registration cancelled page."""
         return self.name + "_registration_cancelled__"
 
     @property
     def add_slots(self) -> str:
+        """Name of the scheduler's slot creation page."""
         return self.name + "_add_slots__"
 
     @property
     def manage_slots(self) -> str:
+        """Name of the scheduler's slot management page."""
         return self.name + "_manage_slots__"
 
     @property
     def interface(self) -> str:
+        """Name of the scheduler's participant infercace section."""
         return self.name + "_interface__"
 
     @property
     def admin(self) -> str:
+        """Name of the scheduler's admin section."""
         return self.name + "_admin__"
 
     def mail_data(self, data: dict) -> dict:
+        """
+        Returns pre-processed data for rendering email templates.
+
+        Args:
+            data (dict): A slot data dictionary.
+        """
         start = datetime.fromtimestamp(data["start"])
         data["date"] = start.strftime(self.txt.get("date_format"))
         data["time"] = start.strftime(self.txt.get("time_format"))
@@ -498,6 +537,16 @@ class Scheduler:
         return data
 
     def render_mail(self, data: dict, template: str) -> str:
+        """
+        Pre-processes slot data and renders an email template.
+
+        Args:
+            data (dict): A slot data dictionary.
+            template (str): Name of the template to render.
+
+        Returns:
+            str: Rendered template.
+        """
         data = self.mail_data(data)
         template = self.txt.get(template)
         return template.render(data)
