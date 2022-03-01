@@ -16,7 +16,7 @@ from .scheduler import DateSlot
 from .scheduler import DateSlotData
 from .text import TEXTS
 
-env = Environment(loader=PackageLoader("alfred3_interact", "scheduler/templates"))
+env = Environment(loader=PackageLoader("alfred3_scheduler", "templates"))
 
 
 class AddDateSlot(TextArea):

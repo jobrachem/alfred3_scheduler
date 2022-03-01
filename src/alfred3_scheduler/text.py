@@ -6,7 +6,7 @@ from jinja2 import Environment
 
 from . import static
 
-env = Environment(loader=PackageLoader("alfred3_interact", "scheduler/templates"))
+env = Environment(loader=PackageLoader("alfred3_scheduler", "templates"))
 
 TEXTS = dict()
 
