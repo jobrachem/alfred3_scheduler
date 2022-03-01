@@ -1,0 +1,41 @@
+﻿alfred3\_scheduler.scheduler
+============================
+
+.. automodule:: alfred3_scheduler.scheduler
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      DataHandler
+      DataTypes
+      DateSlot
+      DateSlotData
+      Scheduler
+      SchedulerURLHandler
+   
+   
+
+   
+   
+   .. rubric:: Exceptions
+
+   .. autosummary::
+   
+      Busy
+      SchedulerException
+   
+   
+
+
+

@@ -1,0 +1,940 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SchedulerInterface.subsections &#8212; alfred3_scheduler</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SchedulerInterface.subtitle" href="alfred3_scheduler.section.SchedulerInterface.subtitle.html" />
+    <link rel="prev" title="SchedulerInterface.shuffle" href="alfred3_scheduler.section.SchedulerInterface.shuffle.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">alfred3_scheduler</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Durchsuchen Sie die Dokumente ..." aria-label="Durchsuchen Sie die Dokumente ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../CHANGELOG.html">
+   Changelog
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  API Reference
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="alfred3_scheduler.scheduler.Scheduler.html">
+   Scheduler
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.scheduler.Scheduler.mail_data.html">
+     Scheduler.mail_data()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.scheduler.Scheduler.render_mail.html">
+     Scheduler.render_mail()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.scheduler.Scheduler.url_handler.html">
+     Scheduler.url_handler()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.scheduler.Scheduler.add_slots.html">
+     Scheduler.add_slots
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.scheduler.Scheduler.admin.html">
+     Scheduler.admin
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.scheduler.Scheduler.interface.html">
+     Scheduler.interface
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.scheduler.Scheduler.manage_slots.html">
+     Scheduler.manage_slots
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.scheduler.Scheduler.registration.html">
+     Scheduler.registration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.scheduler.Scheduler.registration_cancelled.html">
+     Scheduler.registration_cancelled
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.scheduler.Scheduler.registration_confirmed.html">
+     Scheduler.registration_confirmed
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.scheduler.Scheduler.registration_initiated.html">
+     Scheduler.registration_initiated
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.html">
+   SchedulerAdmin
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.added_to_experiment.html">
+     SchedulerAdmin.added_to_experiment()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.added_to_section.html">
+     SchedulerAdmin.added_to_section()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.append.html">
+     SchedulerAdmin.append()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.on_enter.html">
+     SchedulerAdmin.on_enter()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.on_exp_access.html">
+     SchedulerAdmin.on_exp_access()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.on_hand_over.html">
+     SchedulerAdmin.on_hand_over()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.on_leave.html">
+     SchedulerAdmin.on_leave()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.on_resume.html">
+     SchedulerAdmin.on_resume()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.position_in_section.html">
+     SchedulerAdmin.position_in_section()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.showif.html">
+     SchedulerAdmin.showif()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.uptree.html">
+     SchedulerAdmin.uptree()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.validate_on_backward.html">
+     SchedulerAdmin.validate_on_backward()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.validate_on_forward.html">
+     SchedulerAdmin.validate_on_forward()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.validate_on_jump.html">
+     SchedulerAdmin.validate_on_jump()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.validate_on_leave.html">
+     SchedulerAdmin.validate_on_leave()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.validate_on_move.html">
+     SchedulerAdmin.validate_on_move()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.visible.html">
+     SchedulerAdmin.visible()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.access_level.html">
+     SchedulerAdmin.access_level
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.all_closed_pages.html">
+     SchedulerAdmin.all_closed_pages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.all_elements.html">
+     SchedulerAdmin.all_elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.all_input_elements.html">
+     SchedulerAdmin.all_input_elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.all_members.html">
+     SchedulerAdmin.all_members
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.all_pages.html">
+     SchedulerAdmin.all_pages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.all_shown_input_elements.html">
+     SchedulerAdmin.all_shown_input_elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.all_shown_pages.html">
+     SchedulerAdmin.all_shown_pages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.all_subsections.html">
+     SchedulerAdmin.all_subsections
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.all_updated_elements.html">
+     SchedulerAdmin.all_updated_elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.all_updated_members.html">
+     SchedulerAdmin.all_updated_members
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.all_updated_pages.html">
+     SchedulerAdmin.all_updated_pages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.allow_backward.html">
+     SchedulerAdmin.allow_backward
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.allow_forward.html">
+     SchedulerAdmin.allow_forward
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.allow_jumpfrom.html">
+     SchedulerAdmin.allow_jumpfrom
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.allow_jumpto.html">
+     SchedulerAdmin.allow_jumpto
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.close_pages_on_leave.html">
+     SchedulerAdmin.close_pages_on_leave
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.data.html">
+     SchedulerAdmin.data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.empty.html">
+     SchedulerAdmin.empty
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.exp.html">
+     SchedulerAdmin.exp
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.experiment.html">
+     SchedulerAdmin.experiment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.first_member.html">
+     SchedulerAdmin.first_member
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.first_page.html">
+     SchedulerAdmin.first_page
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.instance_log.html">
+     SchedulerAdmin.instance_log
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.last_member.html">
+     SchedulerAdmin.last_member
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.last_page.html">
+     SchedulerAdmin.last_page
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.members.html">
+     SchedulerAdmin.members
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.name.html">
+     SchedulerAdmin.name
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.pages.html">
+     SchedulerAdmin.pages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.parent.html">
+     SchedulerAdmin.parent
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.parent_name.html">
+     SchedulerAdmin.parent_name
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.scheduler.html">
+     SchedulerAdmin.scheduler
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.section.html">
+     SchedulerAdmin.section
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.short_tree.html">
+     SchedulerAdmin.short_tree
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.should_be_shown.html">
+     SchedulerAdmin.should_be_shown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.shuffle.html">
+     SchedulerAdmin.shuffle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.subsections.html">
+     SchedulerAdmin.subsections
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.subtitle.html">
+     SchedulerAdmin.subtitle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.tag.html">
+     SchedulerAdmin.tag
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.title.html">
+     SchedulerAdmin.title
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.tree.html">
+     SchedulerAdmin.tree
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.uid.html">
+     SchedulerAdmin.uid
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.unlinked_data.html">
+     SchedulerAdmin.unlinked_data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerAdmin.vargs.html">
+     SchedulerAdmin.vargs
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.html">
+   SchedulerInterface
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.added_to_experiment.html">
+     SchedulerInterface.added_to_experiment()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.added_to_section.html">
+     SchedulerInterface.added_to_section()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.append.html">
+     SchedulerInterface.append()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.on_enter.html">
+     SchedulerInterface.on_enter()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.on_exp_access.html">
+     SchedulerInterface.on_exp_access()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.on_hand_over.html">
+     SchedulerInterface.on_hand_over()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.on_leave.html">
+     SchedulerInterface.on_leave()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.on_resume.html">
+     SchedulerInterface.on_resume()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.position_in_section.html">
+     SchedulerInterface.position_in_section()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.showif.html">
+     SchedulerInterface.showif()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.uptree.html">
+     SchedulerInterface.uptree()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.validate_on_backward.html">
+     SchedulerInterface.validate_on_backward()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.validate_on_forward.html">
+     SchedulerInterface.validate_on_forward()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.validate_on_jump.html">
+     SchedulerInterface.validate_on_jump()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.validate_on_leave.html">
+     SchedulerInterface.validate_on_leave()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.validate_on_move.html">
+     SchedulerInterface.validate_on_move()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.visible.html">
+     SchedulerInterface.visible()
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.all_closed_pages.html">
+     SchedulerInterface.all_closed_pages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.all_elements.html">
+     SchedulerInterface.all_elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.all_input_elements.html">
+     SchedulerInterface.all_input_elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.all_members.html">
+     SchedulerInterface.all_members
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.all_pages.html">
+     SchedulerInterface.all_pages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.all_shown_input_elements.html">
+     SchedulerInterface.all_shown_input_elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.all_shown_pages.html">
+     SchedulerInterface.all_shown_pages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.all_subsections.html">
+     SchedulerInterface.all_subsections
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.all_updated_elements.html">
+     SchedulerInterface.all_updated_elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.all_updated_members.html">
+     SchedulerInterface.all_updated_members
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.all_updated_pages.html">
+     SchedulerInterface.all_updated_pages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.allow_backward.html">
+     SchedulerInterface.allow_backward
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.allow_forward.html">
+     SchedulerInterface.allow_forward
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.allow_jumpfrom.html">
+     SchedulerInterface.allow_jumpfrom
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.allow_jumpto.html">
+     SchedulerInterface.allow_jumpto
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.close_pages_on_leave.html">
+     SchedulerInterface.close_pages_on_leave
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.data.html">
+     SchedulerInterface.data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.email.html">
+     SchedulerInterface.email
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.empty.html">
+     SchedulerInterface.empty
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.exp.html">
+     SchedulerInterface.exp
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.experiment.html">
+     SchedulerInterface.experiment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.first_member.html">
+     SchedulerInterface.first_member
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.first_page.html">
+     SchedulerInterface.first_page
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.instance_log.html">
+     SchedulerInterface.instance_log
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.last_member.html">
+     SchedulerInterface.last_member
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.last_page.html">
+     SchedulerInterface.last_page
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.members.html">
+     SchedulerInterface.members
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.name.html">
+     SchedulerInterface.name
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.pages.html">
+     SchedulerInterface.pages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.parent.html">
+     SchedulerInterface.parent
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.parent_name.html">
+     SchedulerInterface.parent_name
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.scheduler.html">
+     SchedulerInterface.scheduler
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.section.html">
+     SchedulerInterface.section
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.short_tree.html">
+     SchedulerInterface.short_tree
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.should_be_shown.html">
+     SchedulerInterface.should_be_shown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.shuffle.html">
+     SchedulerInterface.shuffle
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     SchedulerInterface.subsections
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.subtitle.html">
+     SchedulerInterface.subtitle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.tag.html">
+     SchedulerInterface.tag
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.title.html">
+     SchedulerInterface.title
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.tree.html">
+     SchedulerInterface.tree
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.uid.html">
+     SchedulerInterface.uid
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.unlinked_data.html">
+     SchedulerInterface.unlinked_data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.vargs.html">
+     SchedulerInterface.vargs
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Navigation umschalten</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Laden Sie diese Seite herunter"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/generated/alfred3_scheduler.section.SchedulerInterface.subsections.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Quelldatei herunterladen" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="In PDF drucken"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/jobrachem/alfred3_scheduler"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Quell-Repository"><i
+                    class="fab fa-github"></i>Repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Vollbildmodus"
+        title="Vollbildmodus"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>SchedulerInterface.subsections</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="schedulerinterface-subsections">
+<h1>SchedulerInterface.subsections<a class="headerlink" href="#schedulerinterface-subsections" title="Permalink to this headline">¶</a></h1>
+<dl class="py property">
+<dt class="sig sig-object py" id="alfred3_scheduler.section.SchedulerInterface.subsections">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">SchedulerInterface.</span></span><span class="sig-name descname"><span class="pre">subsections</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><span class="pre">dict</span></a></em><a class="reference external" href="https://github.com/jobrachem/alfred3_scheduler/blob/main/src/alfred3_scheduler/section.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#alfred3_scheduler.section.SchedulerInterface.subsections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a flat dict of all subsections in this section.</p>
+<p>Subsections in subsections are not included. Use
+<a class="reference internal" href="alfred3_scheduler.section.SchedulerInterface.all_subsections.html#alfred3_scheduler.section.SchedulerInterface.all_subsections" title="alfred3_scheduler.section.SchedulerInterface.all_subsections"><code class="xref py py-attr docutils literal notranslate"><span class="pre">all_subsections</span></code></a> for that purpose.</p>
+</dd></dl>
+
+</div>
+
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="alfred3_scheduler.section.SchedulerInterface.shuffle.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">SchedulerInterface.shuffle</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="alfred3_scheduler.section.SchedulerInterface.subtitle.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">SchedulerInterface.subtitle</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Durch Johannes Brachem, Christian Treffenstädt<br/>
+    
+        &copy; Urheberrechte © 2022, Johannes Brachem, Christian Treffenstädt.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
