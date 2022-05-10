@@ -41,7 +41,7 @@ Now, the experiment has three views:
 2. The admin view, where administrators can see and manage experiment sessions. Started by
    appending `?admin=true` to the experiment url.
 3. The scheduler view, where potential participants can sign up for experiment
-   sessions. Started by appending `scheduler=scheduler_name` to the experiment
+   sessions. Started by appending `?scheduler=scheduler_name` to the experiment
    url. In the case of the demo code above, `scheduler_name` would be
    replaced by `demo_scheduler`.
 
