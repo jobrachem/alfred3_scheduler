@@ -10,6 +10,11 @@ Install via pip:
 $ pip install alfred3_scheduler
 ```
 
+## Documentation
+
+There is limited API documentation [here](https://jobrachem.github.io/alfred3_scheduler/build/html/index.html).
+For a usage example and some notes, see below.
+
 ## Usage
 
 The scheduler can be added to an experiment like this:
